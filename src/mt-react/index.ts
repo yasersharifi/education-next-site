@@ -16,7 +16,11 @@ import {
     TimelineItem,
     TimelineConnector,
     TimelineIcon,
-    TimelineHeader
+    TimelineHeader,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    Chip
 } from "@material-tailwind/react";
 
 export {
@@ -35,5 +39,9 @@ export {
     TimelineItem,
     TimelineConnector,
     TimelineIcon,
-    TimelineHeader
+    TimelineHeader,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    Chip
 }
