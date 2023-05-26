@@ -25,8 +25,8 @@ export default function SiteFooter() {
   return (
     <footer className="relative w-full border-t border-blue-gray-50 pt-14">
       <div className="w-full">
-        <div className="grid justify-between grid-cols-12 gap-4 mx-auto lg:gap-8 max-w-7xl">
-            <div className="col-span-3">
+        <div className="grid justify-between grid-cols-12 gap-4 px-4 mx-auto lg:px-0 lg:gap-8 max-w-7xl">
+            <div className="col-span-12 sm:col-span-3">
                 <Typography variant="h5" className="mb-6">
                     Material Tailwind
                 </Typography>
@@ -35,7 +35,7 @@ export default function SiteFooter() {
                 </Typography>
             </div>
 
-            <div className="grid justify-between grid-cols-3 col-span-6 gap-4">
+            <div className="grid justify-between grid-cols-3 col-span-12 gap-4 sm:col-span-6">
                 {LINKS.map(({ title, items }) => (
                 <ul key={title}>
                     <Typography
@@ -61,7 +61,7 @@ export default function SiteFooter() {
                 ))}
             </div>
 
-            <div className="grid justify-between grid-cols-1 col-span-3 gap-4">
+            <div className="grid justify-between grid-cols-1 col-span-12 gap-4 sm:col-span-3">
                 <ul>
                     <Typography
                         variant="h4"
