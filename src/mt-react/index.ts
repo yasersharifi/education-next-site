@@ -7,6 +7,16 @@ import {
     Button,
     IconButton,
     Card,
+    Menu,
+    MenuHandler,
+    Avatar,
+    MenuList,
+    MenuItem,
+    Timeline,
+    TimelineItem,
+    TimelineConnector,
+    TimelineIcon,
+    TimelineHeader
 } from "@material-tailwind/react";
 
 export {
@@ -15,5 +25,15 @@ export {
     Typography,
     Button,
     IconButton,
-    Card, 
+    Card,
+    Menu,
+    MenuHandler,
+    Avatar,
+    MenuList,
+    MenuItem,
+    Timeline,
+    TimelineItem,
+    TimelineConnector,
+    TimelineIcon,
+    TimelineHeader
 }
