@@ -65,13 +65,13 @@ export default function SiteHeader() {
     return (
         <Navbar
             color="white"
-            className="sticky inset-0 z-10 max-w-full px-4 py-2 rounded-none h-max lg:px-8 lg:py-4"
+            className="sticky inset-0 z-10 max-w-full px-4 py-2 mx-auto rounded-none h-max lg:px-8 lg:py-4"
         >
-            <div className="flex items-center justify-between text-blue-gray-900">
+            <div className="flex items-center justify-between text-blue-gray-900 lg:max-w-7xl lg:mx-auto">
                 <Typography
                     as="a"
                     href="#"
-                    className="mr-4 cursor-pointer py-1.5 text-xl font-medium shrink-0"
+                    className="cursor-pointer py-1.5 text-xl font-medium shrink-0"
                 >
                     Material Tailwind
                 </Typography>
