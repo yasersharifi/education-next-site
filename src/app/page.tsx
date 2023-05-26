@@ -8,8 +8,33 @@ import SiteHeader from "@/components/layout/site/header";
 import SiteFooter from "@/components/layout/site/footer";
 import CourseListSlider from "@/components/course/course-list-slider";
 import { ArrowLongLeftIcon, ArrowLongRightIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
+import { ICourse } from "@/interfaces/course.interface";
 
-export default function HomePage() {
+
+export async function fetchLatestCourse() {
+    try {
+        const res = await fetch("http://localhost:3000/course/api", {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            cache: 'no-store',
+        });
+
+        if (! res.ok) {
+            throw new Error("Fetch Last Courses Failed !");
+        }
+
+        const result = await res.json();
+
+        return result.statusText === 'success' ? result.data : [];
+    } catch (err: any) {
+        console.log(err.message);
+        return [];
+    }
+}
+
+export default async function HomePage() {
+    const latestsCourse: ICourse[] = await fetchLatestCourse();
 
     return (
         <>
@@ -42,7 +67,7 @@ export default function HomePage() {
                     </Button>
 
                 </div>
-                <CourseListSlider />
+                <CourseListSlider courses={latestsCourse} />
             </section>
 
             <SiteFooter />

@@ -2,8 +2,15 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CourseCard from './course-card';
 import "swiper/css";
+import { ICourse } from '@/interfaces/course.interface';
 
-export default function CourseListSlider() {
+interface IProps {
+    courses: ICourse[],
+}
+
+export default function CourseListSlider(props: IProps) {
+    const { courses } = props;
+
     return (
         <Swiper
             spaceBetween={15}
@@ -11,24 +18,15 @@ export default function CourseListSlider() {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide>
-                <CourseCard />
-            </SwiperSlide>
-            <SwiperSlide>
-                <CourseCard />
-            </SwiperSlide>
-            <SwiperSlide>
-                <CourseCard />
-            </SwiperSlide>
-            <SwiperSlide>
-                <CourseCard />
-            </SwiperSlide>
-            <SwiperSlide>
-                <CourseCard />
-            </SwiperSlide>
-            <SwiperSlide>
-                <CourseCard />
-            </SwiperSlide>
+            {
+                courses && courses.length && courses.map((course: ICourse) => (
+                    <SwiperSlide key={course.id}>
+                        <CourseCard
+                            course={course}
+                        />
+                    </SwiperSlide>
+                ))
+            }
         </Swiper>
     )
 }
