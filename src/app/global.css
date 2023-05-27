@@ -15,3 +15,8 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+button[aria-haspopup="listbox"] > div {
+    right: unset !important;
+    @apply left-2;
+}

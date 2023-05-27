@@ -20,7 +20,9 @@ import {
     CardHeader,
     CardBody,
     CardFooter,
-    Chip
+    Chip,
+    Select,
+    Option
 } from "@material-tailwind/react";
 
 export {
@@ -43,5 +45,7 @@ export {
     CardHeader,
     CardBody,
     CardFooter,
-    Chip
+    Chip,
+    Select,
+    Option
 }

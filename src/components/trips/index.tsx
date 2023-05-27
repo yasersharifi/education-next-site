@@ -6,7 +6,7 @@ import { NewspaperIcon, UserCircleIcon, VideoCameraIcon } from "@heroicons/react
 export default function SiteTrips() {
     return (
         <div
-            className="max-w-7xl h-[7.5rem] mx-auto -mt-10 relative"
+            className="max-w-7xl h-[7.5rem] mx-auto -mt-10 relative z-30"
         >
             <div
                 className="w-full -mt-12 bg-white shadow-xl rounded-2xl"

@@ -12,7 +12,6 @@ import { ICourse } from "@/interfaces/course.interface";
 import SiteBanner from "@/components/banner";
 import SiteTrips from "@/components/trips";
 
-
 export async function fetchLatestCourse() {
     try {
         const res = await fetch("http://localhost:3000/course/api", {
