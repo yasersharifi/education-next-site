@@ -9,6 +9,8 @@ import SiteFooter from "@/components/layout/site/footer";
 import CourseListSlider from "@/components/course/course-list-slider";
 import { ArrowLongLeftIcon, ArrowLongRightIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 import { ICourse } from "@/interfaces/course.interface";
+import SiteBanner from "@/components/banner";
+import SiteTrips from "@/components/trips";
 
 
 export async function fetchLatestCourse() {
@@ -39,6 +41,10 @@ export default async function HomePage() {
     return (
         <>
             <SiteHeader />
+
+            <SiteBanner />
+
+            <SiteTrips />
 
             <section
                 className="w-full px-4 mx-auto my-20 max-w-7xl lg:px-0"
