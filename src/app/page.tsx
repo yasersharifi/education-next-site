@@ -11,6 +11,7 @@ import { ArrowLongLeftIcon, ArrowLongRightIcon, CodeBracketIcon } from "@heroico
 import { ICourse } from "@/interfaces/course.interface";
 import SiteBanner from "@/components/banner";
 import SiteTrips from "@/components/trips";
+import PostListSlider from "@/components/post/post-list-slider";
 
 export async function fetchLatestCourse() {
     try {
@@ -39,12 +40,11 @@ export default async function HomePage() {
 
     return (
         <>
-            <SiteHeader />
-
             <SiteBanner />
 
             <SiteTrips />
 
+            {/* Courses Slider */}
             <section
                 className="w-full px-4 mx-auto my-20 max-w-7xl lg:px-0"
             >
@@ -75,7 +75,36 @@ export default async function HomePage() {
                 <CourseListSlider courses={latestsCourse} />
             </section>
 
-            <SiteFooter />
+            {/* Posts Slider */}
+            <section
+                className="w-full px-4 mx-auto my-20 max-w-7xl lg:px-0"
+            >
+                <div className="flex items-center justify-between gap-1 mb-3">
+                    <Typography
+                        variant="h4"
+                        className="flex items-center gap-2 pl-4 text-gray-700 shrink-0"
+                    >
+                        <Chip
+                            variant="ghost"
+                            color="green"
+                            size="lg"
+                            value={<CodeBracketIcon className="w-5 h-5 text-green-800" />}
+                            className="p-1.5"
+                        />
+
+                        آخرین نوشته ها
+                    </Typography>
+
+                    <span className="block w-full h-0 border-t border-gray-100 grow"></span>
+
+                    <Button variant="text" className="flex items-center gap-2 shrink-0">
+                        <span>همه نوشته ها </span>
+                        <ArrowLongLeftIcon strokeWidth={2} className="w-5 h-5" />
+                    </Button>
+
+                </div>
+                <PostListSlider posts={latestsCourse} />
+            </section>
         </>
     );
 }

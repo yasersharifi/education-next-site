@@ -5,6 +5,9 @@ export const metadata = {
 
 import "./global.css";
 
+import SiteHeader from "@/components/layout/site/header";
+import SiteFooter from "@/components/layout/site/footer";
+
 export default function RootLayout({
   children,
 }: {
@@ -12,10 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
-      <head>
-        <link rel="stylesheet" href="/assets/css/font.css" />
-      </head>
-      <body>{children}</body>
+        <head>
+            <link rel="stylesheet" href="/assets/css/font.css" />
+        </head>
+        <body>
+            <SiteHeader />
+            {children}
+            <SiteFooter />
+        </body>
     </html>
   )
 }
