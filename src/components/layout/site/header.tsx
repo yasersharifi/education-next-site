@@ -68,13 +68,14 @@ export default function SiteHeader() {
             className="sticky inset-0 z-10 max-w-full px-4 py-2 mx-auto rounded-none h-max lg:px-8 lg:py-4"
         >
             <div className="flex items-center justify-between text-blue-gray-900 lg:max-w-7xl lg:mx-auto">
-                <Typography
-                    as="a"
-                    href="#"
-                    className="cursor-pointer py-1.5 text-xl font-medium shrink-0"
-                >
-                    Material Tailwind
-                </Typography>
+                <Link href={'/'}>
+                    <Typography
+                        as="h2"
+                        className="cursor-pointer py-1.5 text-xl font-medium shrink-0"
+                    >
+                        وبسایت من
+                    </Typography>
+                </Link>
 
                 <div className="flex items-center gap-4 grow">
                     <div className="hidden mr-4 lg:block">

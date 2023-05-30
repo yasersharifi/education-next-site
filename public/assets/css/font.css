@@ -25,6 +25,6 @@
 		 url('./../fonts/yekan-bakh/Yekan\ Bakh\ FaNum\ 06\ Bold.ttf') format('truetype');
 }
 
-html, body, h1, h2, h3, h4, h5, h6, p ,a , input, span, div, section, ul, li, select, option, footer, header, button {
+html, body, h1, h2, h3, h4, h5, h6, p ,a , input, span, div, section, ul, li, select, option, footer, header, button, paragraph {
 	font-family: YekanBakh, sans-serif !important;
 }

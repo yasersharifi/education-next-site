@@ -30,7 +30,7 @@ export default function SiteFooter() {
                 <Typography variant="h5" className="mb-6">
                     Material Tailwind
                 </Typography>
-                <Typography variant="p" color="gray" className="text-sm">
+                <Typography variant="paragraph" color="gray" className="text-sm">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
                 </Typography>
             </div>
@@ -48,12 +48,12 @@ export default function SiteFooter() {
                     {items.map((link) => (
                     <li key={link}>
                         <Typography
-                        as="a"
-                        href="#"
-                        color="gray"
-                        className="py-1.5 font-light text-md transition-colors hover:text-green-700"
+                            as="paragraph"
+                            href="#"
+                            color="gray"
+                            className="py-1.5 font-light text-md transition-colors hover:text-green-700"
                         >
-                        {link}
+                            {link}
                         </Typography>
                     </li>
                     ))}

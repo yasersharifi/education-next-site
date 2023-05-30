@@ -22,7 +22,8 @@ import {
     CardFooter,
     Chip,
     Select,
-    Option
+    Option,
+    Breadcrumbs
 } from "@material-tailwind/react";
 
 export {
@@ -47,5 +48,6 @@ export {
     CardFooter,
     Chip,
     Select,
-    Option
+    Option,
+    Breadcrumbs
 }

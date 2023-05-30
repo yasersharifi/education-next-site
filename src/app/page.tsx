@@ -40,6 +40,8 @@ export default async function HomePage() {
 
     return (
         <>
+            <SiteHeader />
+
             <SiteBanner />
 
             <SiteTrips />
@@ -105,6 +107,8 @@ export default async function HomePage() {
                 </div>
                 <PostListSlider posts={latestsCourse} />
             </section>
+
+            <SiteFooter />
         </>
     );
 }

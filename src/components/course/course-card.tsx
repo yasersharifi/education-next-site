@@ -45,7 +45,7 @@ export default function CourseCard(props: IProps) {
                     >
                         <Avatar src={course?.authorAvatar ?? '/assets/images/avatar.avif'} size="md" alt="avatar" withBorder={false} className="p-0.5" />
                         <Typography
-                            variant="a"
+                            variant="paragraph"
                             color="gray"
                             className="text-md"
                         >
