@@ -23,7 +23,16 @@ import {
     Chip,
     Select,
     Option,
-    Breadcrumbs
+    Breadcrumbs,
+    List,
+    ListItem,
+    ListItemPrefix,
+    ListItemSuffix,
+    Accordion,
+    AccordionHeader,
+    AccordionBody,
+    Alert,
+    Input,
 } from "@material-tailwind/react";
 
 export {
@@ -49,5 +58,14 @@ export {
     Chip,
     Select,
     Option,
-    Breadcrumbs
+    Breadcrumbs,
+    List,
+    ListItem,
+    ListItemPrefix,
+    ListItemSuffix,
+    Accordion,
+    AccordionHeader,
+    AccordionBody,
+    Alert,
+    Input,
 }

@@ -34,7 +34,7 @@ export default async function CoursesPage() {
         <>
             {/* Posts Banner */}
             <div
-                className="w-full h-[18rem] flex flex-col items-center justify-center bg-blue-gray-50 mb-6"
+                className="w-full h-[6rem] md:h-[18rem] flex flex-col items-center justify-center bg-blue-gray-50 mb-6"
             >
                 <Typography
                     variant="h3"
